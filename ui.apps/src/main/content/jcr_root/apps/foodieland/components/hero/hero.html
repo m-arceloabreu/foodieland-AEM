@@ -63,7 +63,16 @@
                 </div>
             </div>
             <div class="hot-recipe-hero__view-recipes">
-                <button> View Recipes</button>
+                <button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+                        data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+                        data-sly-element="${button.link ? 'a' : 'button'}"
+                        type="${button.link ? '' : 'button'}"
+                        class="hot-recipe-hero__view-recipes-button-text"
+                        href="${button.link}"
+                        aria-label="${button.accessibilityLabel}"
+                        data-cmp-clickable="${button.data ? true : false}">
+            <span  class="cmp-button__text">View Recipes</span>
+        </button>
             </div>
         </div>
     </div>
