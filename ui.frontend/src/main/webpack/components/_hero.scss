@@ -1,0 +1,23 @@
+.hot-recipe-hero{
+    display: flex;
+    width: 1280px;
+    height: 640px;
+    left: 80px;
+    top: 150px;
+}
+
+.hot-recipe-hero__info{
+width: 50%;
+height: 100%;
+    
+}
+.hot-recipe-hero__image{
+    width: 50%;
+    height: 100%;
+   
+}
+.hot-recipe-hero__text-text, .hot-recipe-hero__text{
+margin-right: 100px;
+padding: 10px;
+color: rgba(0, 0, 0, 0.6)
+}
