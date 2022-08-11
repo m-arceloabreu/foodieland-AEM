@@ -29,34 +29,40 @@ public class SingleRecipeComponent {
 
 
     @ValueMapValue
-    private String singleRecipeName;
+    private String recipeName;
+
     @ValueMapValue
     private String singleRecipeImageReference;
+
     @ValueMapValue
     private String singleRecipePrepareTime;
+
     @ValueMapValue
     private String singleRecipeMainIngredient;
 
-
-
-
-
-
-    public String getSingleRecipeName(){
-        return this.singleRecipeName;
+    
+    public String getRecipeName() {
+        return recipeName;
     }
 
-    public String getSingleRecipeImageReference(){
-        return this.singleRecipeImageReference;
+    public String getSingleRecipeImageReference() {
+        return singleRecipeImageReference;
     }
 
-    public String getSingleRecipePrepareTime(){
-        return this.singleRecipePrepareTime;
+    public String getSingleRecipePrepareTime() {
+        return singleRecipePrepareTime;
     }
 
-    public String getSingleRecipeMainIngredient(){
-        return this.singleRecipeMainIngredient;
+    public String getSingleRecipeMainIngredient() {
+        return singleRecipeMainIngredient;
     }
+
+
+
+
+
+
+
 
 
 
