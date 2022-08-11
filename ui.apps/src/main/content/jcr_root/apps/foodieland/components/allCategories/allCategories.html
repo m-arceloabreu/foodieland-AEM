@@ -1,10 +1,26 @@
 <div class="all-categories"
      data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.AllCategories">
-    <div class="allcategories__title">
-        <h2>Categories</h2>
+    
+     <div class="all-categories__text">
+        <div class="all-categories__title">
+            <h2>Categories</h2>
+        </div>
+            <div class="all-categories__button-view-all-categories">
+                <button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+                        data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+                        data-sly-element="${button.link ? 'a' : 'button'}"
+                        type="${button.link ? '' : 'button'}"
+                        class="all-categories__button-view-all-categories-text"
+                        href="${button.link}"
+                        aria-label="${button.accessibilityLabel}"
+                        data-cmp-clickable="${button.data ? true : false}">
+                            <span  class="cmp-button__text">View all Categories</span>
+                </button>
+            </div>
     </div>
 
-    <div class="cpm-category_comp">
-        <sly  data-sly-resource="${'nome do componente' @ resourceType='wcm/foundation/components/parsys'}"></sly>
+    <div class="all-categories__categories-row">
+        <sly class="all-categories__categories-row-item" 
+            data-sly-resource="${'nome do componente' @ resourceType='wcm/foundation/components/parsys'}"></sly>
     </div>
 </div>

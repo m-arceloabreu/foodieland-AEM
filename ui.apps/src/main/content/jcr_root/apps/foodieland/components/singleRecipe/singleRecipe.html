@@ -1,0 +1,17 @@
+<div class="single-recipe"
+data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.SingleRecipeComponent">
+
+    <div class="single-recipe__image">
+        <img class="single-recipe__image-img" 
+                     style=" width: 100px; height: 100px; left: 50px; top: 50px;"
+                     src="${model.singleRecipeImageReference}" 
+                     alt="">
+    </div>
+    <div class="single-recipe__info">
+        <h4> ${model.singleRecipeName} </h4>
+        <div class="single-recipe__info-text">
+            <p>${model.singleRecipePrepareTime}</p>
+            <p>${model.singleRecipeMainIngredient}</p>
+        </div>
+    </div> 
+</div>
