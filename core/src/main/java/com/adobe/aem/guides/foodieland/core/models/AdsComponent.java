@@ -21,41 +21,21 @@ import java.util.Date;
 import java.util.Optional;
 
 @Model(adaptables = Resource.class,  defaultInjectionStrategy=DefaultInjectionStrategy.OPTIONAL)
-public class SingleRecipeComponent {
+public class AdsComponent {
 
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE)
     @Default(values="No resourceType")
     protected String resourceType;
 
-
     @ValueMapValue
-    private String recipeName;
+    private String adsImageParameter;
 
-    @ValueMapValue
-    private String singleRecipeImageReference;
 
-    @ValueMapValue
-    private String singleRecipePrepareTime;
-
-    @ValueMapValue
-    private String singlRecipeMainIngredient;
-
-    
-    public String getRecipeName() {
-        return recipeName;
+ 
+    public String getAdsImageParameter() {
+        return adsImageParameter;
     }
 
-    public String getSingleRecipeImageReference() {
-        return singleRecipeImageReference;
-    }
-
-    public String getSingleRecipePrepareTime() {
-        return singleRecipePrepareTime;
-    }
-
-    public String getSinglRecipeMainIngredient() {
-        return this.singlRecipeMainIngredient;
-    }
 
 
 

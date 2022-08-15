@@ -1,0 +1,86 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+
+<div class="learn-more" 
+     data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.LearnMoreComponent">
+
+    <div class="learn-more__info">
+            <h2 class="learn-more__info-title" 
+                data-cmp-hook-helloworld="model" 
+                data-sly-test="${model.title}">  
+                    ${model.title}    
+            </h2>
+            <p class="learn-more__info-text" 
+               data-cmp-hook-helloworld="model" 
+               data-sly-test="${model.text}">
+                    ${model.text}
+            </p>
+            
+            <div class="learn-more__info-button">
+                <button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+                        data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+                        data-sly-element="${button.link ? 'a' : 'button'}"
+                        type="${button.link ? '' : 'button'}"
+                        class="learn-more__info-button-text"
+                        href="${button.link}"
+                        aria-label="${button.accessibilityLabel}"
+                        data-cmp-clickable="${button.data ? true : false}">
+                        <span  class="cmp-button__text">Learn More </span>
+                </button>
+            </div>
+        
+        
+       
+    </div>
+    <div class="learn-more__image">
+        <img class="learn-more__image-img"
+             src="${model.learnMoreImageReference}" 
+             alt="">
+    </div>
+</div>
+      
+    <!-- <div>
+        <h2 class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model" data-sly-test="${model.title}">
+            ${model.title}</h2>
+    </div>
+    <div style=" width: 620px; height: 640px; left: 80px; top: 200px;" class="cmp-heroMain_image"
+        data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
+    </div>
+
+
+    <div>
+        <p class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model" data-sly-test="${model.prepareTime}">
+            ${model.prepareTime}</p>
+    </div>
+    <div>
+        <p class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model" data-sly-test="${model.mainIngredient}">
+            ${model.mainIngredient}</p>
+    </div>
+
+    < style="display: flex ; flex-direction: row ; align-items: center ;">
+
+        <img style=" width: 50px; height: 50px; left: 50px; top: 50px; border-radius: 50%;"
+            src="${model.authorImageReference}" alt="">
+        <div>
+            <p class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model" data-sly-test="${model.author}">
+                ${model.author}
+            </p>
+            <p class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model" data-sly-test="${model.date}">
+                ${model.date}</p>
+        </div>
+    
+</div> -->

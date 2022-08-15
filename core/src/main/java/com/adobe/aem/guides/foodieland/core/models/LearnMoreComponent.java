@@ -1,4 +1,5 @@
 package com.adobe.aem.guides.foodieland.core.models;
+
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
 import javax.annotation.PostConstruct;
@@ -21,54 +22,43 @@ import java.util.Date;
 import java.util.Optional;
 
 @Model(adaptables = Resource.class,  defaultInjectionStrategy=DefaultInjectionStrategy.OPTIONAL)
-public class SingleRecipeComponent {
+public class LearnMoreComponent {
 
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE)
     @Default(values="No resourceType")
     protected String resourceType;
 
 
-    @ValueMapValue
-    private String recipeName;
-
-    @ValueMapValue
-    private String singleRecipeImageReference;
-
-    @ValueMapValue
-    private String singleRecipePrepareTime;
-
-    @ValueMapValue
-    private String singlRecipeMainIngredient;
-
-    
-    public String getRecipeName() {
-        return recipeName;
-    }
-
-    public String getSingleRecipeImageReference() {
-        return singleRecipeImageReference;
-    }
-
-    public String getSingleRecipePrepareTime() {
-        return singleRecipePrepareTime;
-    }
-
-    public String getSinglRecipeMainIngredient() {
-        return this.singlRecipeMainIngredient;
-    }
-
-
-
-
-
-
-
-
-
 
    
 
+    @ValueMapValue
+    private String title;
+    @ValueMapValue
+    private String text;
+
+    @ValueMapValue
+    private String learnMoreImageReference;
+
     
 
+
   
+
+    public String getTitle(){
+        return this.title;
+    }
+    public String getText(){
+        return this.text;
+    }
+   
+    public String getLearnMoreImageReference(){
+        return this.learnMoreImageReference;
+    }
+
+
+    
+
+
+
 }

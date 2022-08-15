@@ -1,0 +1,42 @@
+.learn-more{
+    display: flex;
+    width: 1280px;
+    height: 597px;
+    justify-content: center;
+    align-items: center;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-start;
+        padding-left: 80px;
+    }
+    &__info-title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: -0.04em;
+        color: #000000;
+    }
+    &__info-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    &__info-button{
+        background-color: #000000;
+        width: 180px;
+        height: 60px;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 72px;
+    }
+}

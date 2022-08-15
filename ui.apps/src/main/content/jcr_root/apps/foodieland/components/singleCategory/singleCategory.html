@@ -1,5 +1,13 @@
 <div class="single-category"
-data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.SingleCategoryComponent">
+                        data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+                        data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+                        data-sly-element="${button.link ? 'a' : 'button'}"
+                        type="${button.link ? '' : 'button'}"
+                        class="all-categories__button-view-all-categories-text"
+                        href="${button.link}"       
+                        aria-label="${button.accessibilityLabel}"
+                        data-cmp-clickable="${button.data ? true : false}"
+                        data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.SingleCategoryComponent">
 
     <div class="single-category_image">
         <img class="hot-recipe-hero__user-image" 

@@ -1,15 +1,20 @@
 <div class="single-recipe"
-data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.SingleRecipeComponent">
-
-    <div class="single-recipe_image">
-        <p>${properties.singleRecipeImageReference}</p>
-        <img class="hot-recipe-hero__user-image" 
+    data-sly-use.model="com.adobe.aem.guides.foodieland.core.models.SingleRecipeComponent">
+    <div class="single-recipe__image">
+        <img class="single-recipe__image-img"
                     data-cmp-hook-singleRecipeComponent="model"
-                     style=" width: 100px; height: 100px; left: 50px; top: 50px;"
                      src="${model.singleRecipeImageReference}" 
                      alt=""/>
     </div>
-    <div class="single-category_text">
-        <h4> ${model.nameRecipe} </h4>
+    <div class="single-recipe__info">
+        <h4> ${model.recipeName} </h4>
+        <div class="single-recipe__info-tags">
+            <div>
+                <p>${model.singleRecipePrepareTime}</p>
+            </div>
+            <div>
+            <p>${model.singlRecipeMainIngredient}</p>
+            </div>
+        </div>
     </div> 
 </div>
