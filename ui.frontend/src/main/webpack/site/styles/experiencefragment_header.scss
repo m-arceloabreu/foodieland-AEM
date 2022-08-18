@@ -2,6 +2,7 @@
 //== XF Header style, used on page template
 
 header.experiencefragment {
+    width: 100%;
     padding: .5em 1em;
     border-bottom: 1px solid $color-foreground;
 
@@ -32,7 +33,7 @@ header.experiencefragment {
 
     .cmp-container {
         display: grid;
-        grid-template-columns: 4fr 1fr 1fr;
+        grid-template-columns: 10fr ;
     }
 
     //== Navigation

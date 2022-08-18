@@ -1,9 +1,26 @@
 .cmp-navigation {}
-.cmp-navigation__group {}
-.cmp-navigation__item {}
+.cmp-navigation__group {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0px;
+  
+
+}
+.cmp-navigation__item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
 .cmp-navigation__item--active {}
 // .cmp-navigation__item--level-0 {}
 .cmp-navigation__item--level-0:hover > .cmp-navigation__group {
-  background: #ECECEC;
+  text-decoration: none;
 }
-.cmp-navigation__item-link {}
+.cmp-navigation__item-link {
+  text-decoration: none;
+  color: black;
+
+  padding-inline: 20px;
+}
